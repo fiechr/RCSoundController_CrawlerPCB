@@ -34,8 +34,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 0.6,
-          "width": 1.75
+          "height": 2.5,
+          "width": 4.5
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -123,7 +123,9 @@
         0.5,
         0.7,
         1.0,
-        1.5
+        1.5,
+        2.0,
+        2.5
       ],
       "via_dimensions": [
         {
@@ -349,9 +351,7 @@
     "pinned_footprint_libs": [
       "cf"
     ],
-    "pinned_symbol_libs": [
-      "cf"
-    ]
+    "pinned_symbol_libs": []
   },
   "meta": {
     "filename": "RC_Engine_Sound_Light_Controller_KiCad6.kicad_pro",
