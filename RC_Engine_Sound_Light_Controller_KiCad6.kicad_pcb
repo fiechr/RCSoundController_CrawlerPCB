@@ -1178,6 +1178,30 @@
     )
   )
 
+  (footprint "cf:DiodePolaritySilkscreenSymbol" (layer "F.Cu")
+    (tedit 0) (tstamp 729474e2-d14f-4427-add0-66153ab11ddd)
+    (at 88.9 72.23)
+    (attr smd exclude_from_bom)
+    (fp_text reference "REF**" (at 0 -0.5 unlocked) (layer "F.SilkS") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+      (tstamp 9a201176-cb94-4d4b-b510-43dfb4387224)
+    )
+    (fp_text value "DiodePolaritySilkscreenSymbol" (at 0 1 unlocked) (layer "F.Fab") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+      (tstamp 04bee2cc-e446-431d-ad42-9054036f9c78)
+    )
+    (fp_text user "${REFERENCE}" (at 0 2.5 unlocked) (layer "F.Fab") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+      (tstamp ebe1e2b3-3210-4f5c-b81f-a888a827d103)
+    )
+    (fp_line (start -0.508 0) (end 0.508 0) (layer "F.SilkS") (width 0.15) (tstamp f6250c7f-a5a9-4de2-85c3-eb4ff65e2c73))
+    (fp_poly (pts
+        (xy 0 -0.11176)
+        (xy -0.508 -1.12776)
+        (xy 0.508 -1.12776)
+      ) (layer "F.SilkS") (width 0.1) (fill solid) (tstamp dc2b5fa6-148e-48b8-acbb-2ab4384a6414))
+  )
+
   (footprint "Capacitor_Tantalum_SMD:CP_EIA-7343-30_AVX-N_Pad2.25x2.55mm_HandSolder" (layer "F.Cu")
     (tedit 5EBA9318) (tstamp 7c3b76b1-44a2-4008-968c-a62f0ee44eb5)
     (at 115.824 68.072 90)
@@ -1856,6 +1880,30 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 -90))
     )
+  )
+
+  (footprint "cf:DiodePolaritySilkscreenSymbol" (layer "F.Cu")
+    (tedit 0) (tstamp c33e20a5-71d0-4dd2-90a2-1990d91d6554)
+    (at 131.87012 52.07 -90)
+    (attr smd exclude_from_bom)
+    (fp_text reference "REF**" (at 0 -0.5 -90 unlocked) (layer "F.SilkS") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+      (tstamp 4fa6ac5f-caaa-415a-bad6-cf20d34d02ce)
+    )
+    (fp_text value "DiodePolaritySilkscreenSymbol" (at 0 1 -90 unlocked) (layer "F.Fab") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+      (tstamp 985b879c-2338-43a5-bde4-858b13d88895)
+    )
+    (fp_text user "${REFERENCE}" (at 0 2.5 -90 unlocked) (layer "F.Fab") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+      (tstamp b926f299-aecb-4370-a2c0-7a4fad32ef94)
+    )
+    (fp_line (start -0.508 0) (end 0.508 0) (layer "F.SilkS") (width 0.15) (tstamp 255c4e05-d020-4506-b076-0aa7c97a7831))
+    (fp_poly (pts
+        (xy 0 -0.11176)
+        (xy -0.508 -1.12776)
+        (xy 0.508 -1.12776)
+      ) (layer "F.SilkS") (width 0.1) (fill solid) (tstamp 32891c93-9fe9-4404-9753-fb2ef222e1d8))
   )
 
   (footprint "cf:ESP32_DEVKITV1_30PIN" (layer "F.Cu")
@@ -3457,20 +3505,7 @@
       ) (layer "B.SilkS") (width 0.01) (fill solid) (tstamp f9644560-304c-413c-ba97-4ca587343b56))
   )
 
-  (gr_poly
-    (pts
-      (xy 88.773 72.009)
-      (xy 88.392 71.247)
-      (xy 89.154 71.247)
-    ) (layer "F.SilkS") (width 0.15) (fill solid) (tstamp 6722cd8b-951e-4e19-b807-f5600c5539eb))
-  (gr_line (start 88.392 72.136) (end 89.154 72.136) (layer "F.SilkS") (width 0.15) (tstamp 746e2ba0-b1eb-4549-8965-2adada89be50))
-  (gr_line (start 131.9022 51.4604) (end 131.9022 52.2224) (layer "F.SilkS") (width 0.15) (tstamp 917391e8-039b-4c17-99c3-8658e49eeb68))
-  (gr_poly
-    (pts
-      (xy 132.0292 51.8414)
-      (xy 132.7912 51.4604)
-      (xy 132.7912 52.2224)
-    ) (layer "F.SilkS") (width 0.15) (fill solid) (tstamp c32c3e98-c2d5-490b-a67e-237ed8d27abd))
+  (gr_circle (center 97.536 70.104) (end 98.044 70.104) (layer "F.SilkS") (width 0.15) (fill solid) (tstamp 9890e80e-f3c9-40b3-91f2-4d8ec710c425))
   (gr_line (start 152 48.5) (end 152 83) (layer "Edge.Cuts") (width 0.1) (tstamp 074f71fe-4090-4324-833a-d5a9b966e7bd))
   (gr_arc (start 149.5 46) (mid 151.267767 46.732233) (end 152 48.5) (layer "Edge.Cuts") (width 0.1) (tstamp 2b9a0ef9-8cf4-4140-8a2b-5f3be653aeea))
   (gr_line (start 84 46) (end 149.5 46) (layer "Edge.Cuts") (width 0.1) (tstamp 80484e8f-c6bc-48c3-9528-1105c9ed62a0))
@@ -3501,6 +3536,9 @@
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_text "+" (at 120.65 82.042) (layer "F.SilkS") (tstamp 47ab9aba-5a2b-4631-8970-b1c7a6b9b546)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (gr_text "+" (at 115.81 66.58) (layer "F.SilkS") (tstamp 6b54abe1-b603-459b-8c2e-b6bf79627910)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_text "7-12.6V" (at 82.804 69.469 270) (layer "F.SilkS") (tstamp 71b732e7-8773-4aa9-a9d9-14abea152a14)
@@ -3742,7 +3780,6 @@
   (segment (start 121.888 52.324) (end 130.048 52.324) (width 0.5) (layer "F.Cu") (net 34) (tstamp 2754b80c-2f0e-4114-91b8-8860bfd5a853))
   (segment (start 142.6464 53.5686) (end 144.145 52.07) (width 0.5) (layer "F.Cu") (net 34) (tstamp 5d01908b-aab5-4005-ace8-8bf8c57295cb))
   (segment (start 131.2926 53.5686) (end 142.6464 53.5686) (width 0.5) (layer "F.Cu") (net 34) (tstamp 7db9aa17-491e-48bf-b320-708956c5ff40))
-  (segment (start 121.7102 52.1462) (end 121.888 52.324) (width 0.5) (layer "F.Cu") (net 34) (tstamp ad458b05-3c51-41e3-8bc2-3460bf5c0fd9))
   (segment (start 130.27 64.77) (end 144.16 64.77) (width 0.5) (layer "F.Cu") (net 35) (tstamp dd530928-e10f-47e0-8f42-ea2e04616a7a))
   (segment (start 130.27 62.23) (end 144.16 62.23) (width 0.5) (layer "F.Cu") (net 36) (tstamp 1cb9f2db-3217-46c0-a44a-e815b8bc67a3))
   (segment (start 130.27 59.69) (end 144.16 59.69) (width 0.5) (layer "F.Cu") (net 37) (tstamp 005d13d9-2f63-4496-801f-7bf51a86fbdb))
@@ -15268,18 +15305,6 @@
         (xy 84.049104 46.5005)
         (xy 149.441739 46.5005)
       )
-    )
-  )
-  (group "" (id 20c87b46-1e28-48bc-ae1b-9dc49e7b7adc)
-    (members
-      6722cd8b-951e-4e19-b807-f5600c5539eb
-      746e2ba0-b1eb-4549-8965-2adada89be50
-    )
-  )
-  (group "" (id 50740c7a-e1e1-4129-b4cf-26f44a7e4cab)
-    (members
-      917391e8-039b-4c17-99c3-8658e49eeb68
-      c32c3e98-c2d5-490b-a67e-237ed8d27abd
     )
   )
 )
